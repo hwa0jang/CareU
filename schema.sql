@@ -24,8 +24,7 @@ CREATE TABLE care (
     blood_sugar VARCHAR(5),
     blood_pressure VARCHAR(5),
     bath char(1),
-    overnight DATE,
-	PRIMARY KEY(p_id,m_id),
+    overnight VARCHAR(12),
     FOREIGN KEY(p_id) REFERENCES patient(id),
     FOREIGN KEY(m_id) REFERENCES Medical_staff(id)
 );
