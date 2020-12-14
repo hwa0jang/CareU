@@ -11,10 +11,53 @@
                 color:azure;
                 background-color: #080a0a;;
             }
+            form {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
             <h1> 일 지 </h1>
-
+            
+            <form method="POST" action="{{url_for('add')}}" >
+                <dl>
+                    <p>
+                        <input name="p_id" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="m_id" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="dates" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="breakfast" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="lunch" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="dinner" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="medicine" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="blood_sugar" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="blood_pressure" value="" type="text" >
+                    </p>
+                    <p>
+                        <input name="bath" value="" type="text" >
+                    <p>
+                        <input name="overnight" value="" type="text">
+                    </p>
+                </dl>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+                </dl>
+            </form>
     </body>
 </html>

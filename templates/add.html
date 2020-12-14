@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+   <body>
+    {% for item in items %}
+        <tr><td>{{ items.p_id }}</td>
+        <td>{{ item.m_id }} </td>
+        <td>{{ item.dates }} </td>
+        <td>{{ item.breakfast }} </td>
+        <td>{{ item.lunch }} </td>
+        <td>{{ item.dinner }} </td>
+        <td>{{ item.medicine }} </td>
+        <td>{{ item.blood_sugar }} </td>
+        <td>{{ item.blood_pressure }} </td>
+        <td>{{ item.bath }} </td>
+        <td>{{ item.overnight }}<br></td></tr>
+    {% endfor %}
+      <h2><a href = "\">go back to home page</a></h2>
+   </body>
+</html>

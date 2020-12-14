@@ -23,7 +23,6 @@ INSERT INTO "Medical_staff" VALUES (10,'김망고', '김무', '김귤');
 
 INSERT INTO "care" VALUES (00000001,1,'2020-12-12','o','o','o','10:10:00',90,90,'o','2020-12-12');
 
-INSERT INTO "Major_disease" VALUES (00000001,'당뇨');
 INSERT INTO "Major_disease" VALUES (00000001,'고혈압');
 INSERT INTO "Major_disease" VALUES (00000002,'고혈압');
 INSERT INTO "Major_disease" VALUES (00000003,'당뇨');
