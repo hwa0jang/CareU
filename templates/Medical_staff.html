@@ -11,10 +11,26 @@
                 color:azure;
                 background-color: #080a0a;;
             }
+            table {
+                text-align: center;
+                background-color: #ffffff;
+            }
         </style>
     </head>
     <body>
             <h1> 의 료 진 확 인 </h1>
-            
+            <table border="1" align="center">
+                <th>의료진 번호</th>
+                <th>의사</th>
+                <th>간호사</th>
+                <th>간병인</th>
+            {% for item in items %}
+                <tr>
+                <td>{{ item.id }} </td>
+                <td>{{ item.doctor }} </td>
+                <td>{{ item.nurse }} </td>
+                <td>{{ item.caregiver }}<br></td></tr>
+            {% endfor %}
+            </table>>
     </body>
 </html>

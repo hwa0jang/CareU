@@ -19,10 +19,10 @@
     <body>
             <h1> 일 지 </h1>
             
-            <form method="POST" action="{{url_for('add')}}" >
+            <form action="/add" method="POST" >
                 <dl>
                     <p>
-                        <input name="p_id" value="" type="text" >
+                        <input name="p_id" type="text" >
                     </p>
                     <p>
                         <input name="m_id" value="" type="text" >
@@ -53,10 +53,9 @@
                     <p>
                         <input name="overnight" value="" type="text">
                     </p>
-                </dl>
-                <p>
+                    <p>
                     <input type="submit" value="Submit">
-                </p>
+                    </p>
                 </dl>
             </form>
     </body>

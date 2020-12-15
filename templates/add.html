@@ -1,19 +1,27 @@
 <!doctype html>
 <html>
+   <head>
+      <style>
+         h1 {
+            text-align: center;
+         }
+         h2 {
+            text-align: center;
+         }
+         h3 {
+            text-align: center;
+            font-size: 0.8em;
+            color: rgb(194, 194, 194);
+         }
+      </style>
+   </head>
    <body>
-    {% for item in items %}
-        <tr><td>{{ items.p_id }}</td>
-        <td>{{ item.m_id }} </td>
-        <td>{{ item.dates }} </td>
-        <td>{{ item.breakfast }} </td>
-        <td>{{ item.lunch }} </td>
-        <td>{{ item.dinner }} </td>
-        <td>{{ item.medicine }} </td>
-        <td>{{ item.blood_sugar }} </td>
-        <td>{{ item.blood_pressure }} </td>
-        <td>{{ item.bath }} </td>
-        <td>{{ item.overnight }}<br></td></tr>
-    {% endfor %}
-      <h2><a href = "\">go back to home page</a></h2>
+      <h1>
+         <br><br><a href="/view"style="color: white;font-size: 2.0em;font-weight: bold;background: #a0daeb;text-decoration:none;">일지 확인</a><br><br>
+      </h1>  
+      <h2>
+         <a href="/"style="color: white;font-size: 2.0em;font-weight: bold;background: #a0daeb;text-decoration:none;">처음화면으로 돌아가기</a><br><br>
+      </h2>
+      <h3>(원하시는 것을 클릭해주세요)</h3>
    </body>
 </html>

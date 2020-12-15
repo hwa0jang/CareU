@@ -7,7 +7,7 @@ CREATE TABLE patient (
 );
 
 CREATE TABLE Medical_staff (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id VARCHAR(2) PRIMARY KEY,
     doctor VARCHAR(25),
     nurse VARCHAR(25),
     caregiver VARCHAR(25)
@@ -15,7 +15,7 @@ CREATE TABLE Medical_staff (
 
 CREATE TABLE care (
     p_id NUMBER(8),
-    m_id INTEGER,
+    m_id VARCHAR(2),
     dates DATE,
     breakfast CHAR(1),
     lunch CHAR(1),

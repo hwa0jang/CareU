@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+     <title>List</title>  
+ </head>  
+ <body>  
+ <h3>일 지</h3>   
+ <table border=5>  
+ <thead>  
+ <td>환자 번호</td>  
+ <td>의료진 번호</td>  
+ <td>날짜</td>   
+ <td>아침 식사</td>  
+ <td>점심 식사</td> 
+ <td>저녁 식사</td> 
+ <td>투약 시간</td> 
+ <td>혈당</td> 
+ <td>혈압</td> 
+ <td>목욕</td> 
+ <td>외박날짜</td> 
+ </thead>  
+ {% for row in rows %}  
+ <tr>  
+ <td>{{row["p_id"]}}</td>  
+ <td>{{row["m_id"]}}</td>  
+ <td>{{row["dates"]}}</td>  
+ <td>{{row["breakfast"]}}</td>  
+ <td>{{row["lunch"]}}</td>  
+ <td>{{row["dinner"]}}</td>  
+ <td>{{row["medicine"]}}</td>  
+ <td>{{row["blood_sugar"]}}</td>  
+ <td>{{row["blood_pressure"]}}</td>  
+ <td>{{row["bath"]}}</td>  
+ <td>{{row["overnight"]}}</td>  
+ </tr>  
+ {% endfor %}   
+ </table>  
+ <br><br>  
+ <a href="/">첫페이지로 돌아가기</a>  
+ </body>  
+ </html> 
