@@ -19,8 +19,6 @@ def family():
         return render_template('family.html', items=items)
 
 
-
-
 @app.route('/medical_staff')
 def medical():
         db = sqlite3.connect("hospital.db")
