@@ -55,6 +55,17 @@ def add():
                         db.close()
                         return render_template("add.html")
 
+@app.route('/delete', methods=["POST", "GET"])
+def delete():
+                        p_id = request.form["p_id"]
+                        db = sqlite3.connect("hospital.db")
+                        cur=db.cursor()
+                        cur.execute("delete from care where p_id=?",p_id )
+                        db.commit()
+                        db.close()
+                        return render_template("delete.html")
+
+
 @app.route('/view')
 def view():
         db = sqlite3.connect("hospital.db")
